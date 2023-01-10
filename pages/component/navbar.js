@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GiChewedSkull } from "react-icons/gi";
-import DataNavigation from "../datadummy";
+import { DataNavigation } from "../../datadummy/dumy";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { FaSwatchbook, FaHistory } from "react-icons/fa";
 import { BsGearWide, BsBook } from "react-icons/bs";
