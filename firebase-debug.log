@@ -1,0 +1,67 @@
+[debug] [2023-01-10T17:23:05.041Z] ----------------------------------------------------------------------
+[debug] [2023-01-10T17:23:05.045Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-10T17:23:05.046Z] CLI Version:   11.20.0
+[debug] [2023-01-10T17:23:05.046Z] Platform:      win32
+[debug] [2023-01-10T17:23:05.046Z] Node Version:  v16.18.1
+[debug] [2023-01-10T17:23:05.048Z] Time:          Wed Jan 11 2023 00:23:05 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-10T17:23:05.048Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-10T17:23:05.241Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-10T17:23:05.242Z] > authorizing via signed-in user (gigihprasetia18@gmail.com)
+[debug] [2023-01-10T17:23:05.242Z] [iam] checking project portonextjs for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-10T17:23:05.245Z] > refreshing access token with scopes: []
+[debug] [2023-01-10T17:23:05.248Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-10T17:23:05.249Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-10T17:23:05.449Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-10T17:23:05.449Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-10T17:23:05.472Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions [none]
+[debug] [2023-01-10T17:23:05.472Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions x-goog-quota-user=projects/portonextjs
+[debug] [2023-01-10T17:23:05.472Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-10T17:23:06.662Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions 200
+[debug] [2023-01-10T17:23:06.662Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-10T17:23:06.664Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs [none]
+[debug] [2023-01-10T17:23:07.688Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs 200
+[debug] [2023-01-10T17:23:07.688Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs {"projectId":"portonextjs","projectNumber":"559150462630","displayName":"portonextjs","name":"projects/portonextjs","resources":{"hostingSite":"portonextjs"},"state":"ACTIVE","etag":"1_ce75243e-e15c-4cd0-9c01-ac3c455ff788"}
+[debug] [2023-01-10T17:23:12.875Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites pageToken=&pageSize=10
+[debug] [2023-01-10T17:23:14.847Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites 200
+[debug] [2023-01-10T17:23:14.847Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites {"sites":[{"name":"projects/portonextjs/sites/portonextjs","defaultUrl":"https://portonextjs.web.app","appId":"1:559150462630:web:18bd1a0c882d1435bda667","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-10T17:23:14.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config [none]
+[debug] [2023-01-10T17:23:16.470Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config 200
+[debug] [2023-01-10T17:23:16.471Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config {"projectId":"portonextjs","appId":"1:559150462630:web:18bd1a0c882d1435bda667","storageBucket":"portonextjs.appspot.com","apiKey":"AIzaSyDdeXWYOw9p5-Anb3r7EY4olgNuhQ6gUUU","authDomain":"portonextjs.firebaseapp.com","messagingSenderId":"559150462630","measurementId":"G-RKPGRXJJE3"}
+[debug] [2023-01-10T17:23:43.968Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-10T17:25:51.489Z] ----------------------------------------------------------------------
+[debug] [2023-01-10T17:25:51.492Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-10T17:25:51.493Z] CLI Version:   11.20.0
+[debug] [2023-01-10T17:25:51.493Z] Platform:      win32
+[debug] [2023-01-10T17:25:51.494Z] Node Version:  v16.18.1
+[debug] [2023-01-10T17:25:51.495Z] Time:          Wed Jan 11 2023 00:25:51 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-10T17:25:51.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-10T17:25:51.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-10T17:25:51.629Z] > authorizing via signed-in user (gigihprasetia18@gmail.com)
+[debug] [2023-01-10T17:25:51.629Z] [iam] checking project portonextjs for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-10T17:25:51.633Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions [none]
+[debug] [2023-01-10T17:25:51.634Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions x-goog-quota-user=projects/portonextjs
+[debug] [2023-01-10T17:25:51.634Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-10T17:25:52.877Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions 200
+[debug] [2023-01-10T17:25:52.877Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portonextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-10T17:25:52.879Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs [none]
+[debug] [2023-01-10T17:25:53.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs 200
+[debug] [2023-01-10T17:25:53.581Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portonextjs {"projectId":"portonextjs","projectNumber":"559150462630","displayName":"portonextjs","name":"projects/portonextjs","resources":{"hostingSite":"portonextjs"},"state":"ACTIVE","etag":"1_ce75243e-e15c-4cd0-9c01-ac3c455ff788"}
+[debug] [2023-01-10T17:25:58.748Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites pageToken=&pageSize=10
+[debug] [2023-01-10T17:25:59.445Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites 200
+[debug] [2023-01-10T17:25:59.445Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portonextjs/sites {"sites":[{"name":"projects/portonextjs/sites/portonextjs","defaultUrl":"https://portonextjs.web.app","appId":"1:559150462630:web:18bd1a0c882d1435bda667","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-10T17:25:59.446Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config [none]
+[debug] [2023-01-10T17:26:00.960Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config 200
+[debug] [2023-01-10T17:26:00.960Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:559150462630:web:18bd1a0c882d1435bda667/config {"projectId":"portonextjs","appId":"1:559150462630:web:18bd1a0c882d1435bda667","storageBucket":"portonextjs.appspot.com","apiKey":"AIzaSyDdeXWYOw9p5-Anb3r7EY4olgNuhQ6gUUU","authDomain":"portonextjs.firebaseapp.com","messagingSenderId":"559150462630","measurementId":"G-RKPGRXJJE3"}
+[debug] [2023-01-10T17:26:27.692Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\Acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
