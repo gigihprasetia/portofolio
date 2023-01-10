@@ -1,4 +1,4 @@
-export const dataNavigation = [
+const DataNavigation = [
   {
     id: 1,
     title: "Overview",
@@ -16,3 +16,5 @@ export const dataNavigation = [
     title: "Experience",
   },
 ];
+
+export default DataNavigation;

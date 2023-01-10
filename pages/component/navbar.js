@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GiChewedSkull } from "react-icons/gi";
-import { dataNavigation } from "../datadummy";
+import DataNavigation from "../datadummy";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { FaSwatchbook, FaHistory } from "react-icons/fa";
 import { BsGearWide, BsBook } from "react-icons/bs";
@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="container px-0 md:px-20 h-16 text-xs bg-mud text-white flex items-center justify-center ">
-      {dataNavigation.map((val) => {
+      {DataNavigation.map((val) => {
         return (
           <div
             key={val.id}
